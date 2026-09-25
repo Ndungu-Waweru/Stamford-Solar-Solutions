@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -20,36 +21,42 @@ const productCategories = [
     description: "High-quality solar panels for dependable energy generation.",
     href: "/products?category=solar-panels",
     icon: Sun,
+    image: "/images/icons/solar.webp",
   },
   {
     title: "Lithium Batteries",
     description: "Reliable energy storage for homes, businesses and backup systems.",
     href: "/products?category=lithium-batteries",
     icon: BatteryCharging,
+    image: "/images/icons/lithium battery.webp",
   },
   {
     title: "Inverters",
     description: "Efficient power conversion for modern solar energy systems.",
     href: "/products?category=inverters",
     icon: Zap,
+    image: "/images/icons/inverter.jpg",
   },
   {
     title: "Generators",
     description: "Dependable backup power when you need it most.",
     href: "/products?category=generators",
     icon: Factory,
+    image: "/images/icons/generators.jpeg",
   },
   {
     title: "Solar Water Pumps",
     description: "Efficient solar-powered water pumping solutions.",
     href: "/products?category=solar-water-pumps",
     icon: Wrench,
+    image: "/images/icons/water pump.jpg",
   },
   {
     title: "Portable Power Stations",
     description: "Compact, flexible power for home, work and outdoor use.",
     href: "/products?category=portable-power-stations",
     icon: BatteryCharging,
+    image: "/images/icons/portable power stations.webp",
   },
 ];
 
@@ -266,7 +273,17 @@ export default function HomePage() {
                 >
                   <div className="product-card-top">
                     <div className="product-icon">
-                      <Icon size={24} strokeWidth={1.8} />
+                      {product.image ? (
+                        <Image
+                          src={product.image}
+                          alt={product.title}
+                          width={48}
+                          height={48}
+                          className="product-icon-image"
+                        />
+                      ) : (
+                        <Icon size={24} strokeWidth={1.8} />
+                      )}
                     </div>
 
                     <ArrowRight
