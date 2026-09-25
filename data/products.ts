@@ -1,0 +1,66 @@
+import type { Product } from "@/types/common";
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "VoltMax 5kWh Portable Power Station",
+    slug: "voltmax-5kwh-portable-power-station",
+    category: "Portable power stations",
+    description: "A compact, all-in-one backup solution with rapid charging and silent operation for homes, vans, and small businesses.",
+    price: 1899,
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80",
+    features: ["5kWh lithium storage", "Fast AC recharge", "UPS switching", "Mobile app monitoring"],
+  },
+  {
+    id: "2",
+    name: "EcoGen Pro 8kW Hybrid Inverter",
+    slug: "ecogen-pro-8kw-hybrid-inverter",
+    category: "Inverters",
+    description: "High-efficiency hybrid inverter for residential solar systems requiring smart load balancing and grid flexibility.",
+    price: 2499,
+    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=80",
+    features: ["8kW output", "Hybrid operation", "Wi-Fi monitoring", "MPPT controller"],
+  },
+  {
+    id: "3",
+    name: "SunCore 450W Monocrystalline Panel",
+    slug: "suncore-450w-monocrystalline-panel",
+    category: "Solar panels",
+    description: "Durable high-yield solar panel engineered for long-term generation in residential and commercial rooftops.",
+    price: 349,
+    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80",
+    features: ["450W output", "High efficiency", "Weather resistant", "25-year performance warranty"],
+  },
+  {
+    id: "4",
+    name: "StormCell 48V Lithium Battery",
+    slug: "stormcell-48v-lithium-battery",
+    category: "Lithium batteries",
+    description: "Scalable battery storage system built for secure backup, peak shaving, and off-grid performance.",
+    price: 2199,
+    image: "https://images.unsplash.com/photo-1558494949cc2a3d7d3d4f4f0d7d0a4f?auto=format&fit=crop&w=900&q=80",
+    features: ["48V architecture", "Deep cycle stability", "Modular expansion", "Thermal protection"],
+  },
+  {
+    id: "5",
+    name: "HelioBeam 120W Solar Floodlight",
+    slug: "heliobeam-120w-solar-floodlight",
+    category: "Floodlights",
+    description: "A bright, autonomous lighting system suited for security, industrial yards, and remote access areas.",
+    price: 499,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+    features: ["120W LED", "Motion sensing", "Battery backup", "Weatherproof"],
+  },
+  {
+    id: "6",
+    name: "AquaFlow Solar Pump Kit",
+    slug: "aquaflow-solar-pump-kit",
+    category: "Solar pumps",
+    description: "Efficient solar water pumping solution for irrigation, livestock watering, and remote water supply.",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80",
+    features: ["DC variable speed", "Low maintenance", "Irrigation ready", "Off-grid capable"],
+  },
+];
+
+export const featuredProducts = products.slice(0, 3);

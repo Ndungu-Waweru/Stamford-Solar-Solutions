@@ -1,0 +1,27 @@
+{
+  "name": "solar-business",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/open-browser.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^1.48.0",
+    "next": "16.4.0-canary.42",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8.5.28",
+    "typescript": "5.5.4"
+  }
+}

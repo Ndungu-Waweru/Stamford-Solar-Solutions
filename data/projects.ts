@@ -1,0 +1,40 @@
+import type { Project } from "@/types/common";
+
+export const projects: Project[] = [
+  {
+    id: "1",
+    name: "Riverside Farm Solar Retrofit",
+    slug: "riverside-farm-solar-retrofit",
+    category: "Agricultural",
+    location: "Stamford",
+    summary: "A hybrid system upgrade designed to reduce operational expenses and improve energy resilience for a mixed-use farm.",
+    impact: "The installation reduced annual electricity costs and provided reliable backup during grid instability.",
+    capacity: "48kW",
+    savings: "£18,000/yr",
+    highlights: ["Hybrid inverter array", "Battery storage", "Monitoring and reporting"],
+  },
+  {
+    id: "2",
+    name: "Hayden Logistics Depot",
+    slug: "hayden-logistics-depot",
+    category: "Commercial",
+    location: "Peterborough",
+    summary: "A commercial rooftop prime solution to offset daytime load and support electric vehicle charging infrastructure.",
+    impact: "The site now benefits from lower peak demand charges and improved sustainability performance.",
+    capacity: "120kW",
+    savings: "£36,000/yr",
+    highlights: ["Roof-mounted array", "Peak load management", "EV integration"],
+  },
+  {
+    id: "3",
+    name: "Northfield Rural Cabin Network",
+    slug: "northfield-rural-cabin-network",
+    category: "Remote power",
+    location: "Lincolnshire",
+    summary: "Off-grid microgrid deployment for multiple rural cabins with battery-backed generation and low maintenance requirements.",
+    impact: "The cabins operate independently with resilient renewable power and reduced generator dependence.",
+    capacity: "22kW",
+    savings: "£9,500/yr",
+    highlights: ["Off-grid battery storage", "Remote monitoring", "Low-noise operation"],
+  },
+];
